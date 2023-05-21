@@ -1,0 +1,635 @@
+:root {
+    --brown: rgb(178, 55, 55);
+    --red: rgba(209,65,36,255);
+    --silver: rgb(220,220,220);
+    --GreenGray: rgb(47,79,79);
+    --Blue: rgb(72, 83, 89);
+    --DarkBlue: rgb(39, 49, 53);
+    --lightGreen: rgb(138, 222, 92);
+}
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar */
+
+@font-face {
+    font-family: BrunoAce;
+    src: url(/Fonts2/HindSiliguri-Medium.ttf);
+}
+
+@font-face {
+    font-family: BrunoAceBold;
+    src: url(/Fonts2/HindSiliguri-SemiBold.ttf);
+}
+
+nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.NavigationBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    background-color: white;
+}
+
+.NavigationBar ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+}
+
+.NavigationBar ul li {
+    padding: 10px 30px;
+    position: relative;
+}
+
+.NavigationBar ul li a {
+    color: var(--DarkBlue);
+    font-family: "BrunoAce";
+    text-decoration: none;
+}
+
+.DropDownMenu {
+    display: none;
+}
+
+.NavigationBar ul li:hover .DropDownMenu {
+    display: block;
+    position: absolute;
+    right: 0;
+    list-style: none;
+    top: 100%;
+    background-color: #ffffff;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.DropDownMenu ul {
+    display: block;
+    margin: 10px;
+    position: relative;
+    right: 10px;
+}
+
+.DropDownMenu ul li a {
+    padding: 10px 0px;
+    cursor: pointer;
+}
+
+#Icon {
+    position: relative;
+    right: 20px;
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+    color: var(--DarkBlue);
+    cursor: pointer;
+    display: block;
+}
+
+.Active {
+    background-color: var(--lightGreen);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#LocationsButton::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 5px;
+    left: 0;
+    background-color: var(--DarkBlue);
+    -webkit-transform-origin: bottom right;
+        -ms-transform-origin: bottom right;
+            transform-origin: bottom right;
+    -webkit-transition: -webkit-transform 0.25s ease-out;
+    transition: -webkit-transform 0.25s ease-out;
+    -o-transition: transform 0.25s ease-out;
+    transition: transform 0.25s ease-out;
+    transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+    -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
+}
+
+#LocationsButton:hover::after {
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: bottom left;
+        -ms-transform-origin: bottom left;
+            transform-origin: bottom left;
+}
+
+#ExtraButton::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 5px;
+    left: 0;
+    background-color: var(--DarkBlue);
+    -webkit-transform-origin: bottom right;
+        -ms-transform-origin: bottom right;
+            transform-origin: bottom right;
+    -webkit-transition: -webkit-transform 0.25s ease-out;
+    transition: -webkit-transform 0.25s ease-out;
+    -o-transition: transform 0.25s ease-out;
+    transition: transform 0.25s ease-out;
+    transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+    -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
+}
+
+#ExtraButton:hover::after {
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: bottom left;
+        -ms-transform-origin: bottom left;
+            transform-origin: bottom left;
+}
+
+#GalleryButton::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 5px;
+    left: 0;
+    background-color: var(--DarkBlue);
+    -webkit-transform-origin: bottom right;
+        -ms-transform-origin: bottom right;
+            transform-origin: bottom right;
+    -webkit-transition: -webkit-transform 0.25s ease-out;
+    transition: -webkit-transform 0.25s ease-out;
+    -o-transition: transform 0.25s ease-out;
+    transition: transform 0.25s ease-out;
+    transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+    -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
+}
+
+#GalleryButton:hover::after {
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: bottom left;
+        -ms-transform-origin: bottom left;
+            transform-origin: bottom left;
+}
+
+#HomeButton::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 5px;
+    left: 0;
+    background-color: var(--DarkBlue);
+    -webkit-transform-origin: bottom right;
+        -ms-transform-origin: bottom right;
+            transform-origin: bottom right;
+    -webkit-transition: -webkit-transform 0.25s ease-out;
+    transition: -webkit-transform 0.25s ease-out;
+    -o-transition: transform 0.25s ease-out;
+    transition: transform 0.25s ease-out;
+    transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+    -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
+}
+
+#HomeButton:hover::after {
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: bottom left;
+        -ms-transform-origin: bottom left;
+            transform-origin: bottom left;
+}
+
+#Logo {
+    position: relative;
+    left: 20px;
+}
+
+.Container {
+    width: 85vmin;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    border: 10px solid var(--DarkBlue);
+    box-shadow: 10px 25px 30px var(--Blue, 0.2);
+}
+
+/* Info 1 */
+
+.Paragraphs1 {
+    text-align: center;
+}
+
+#P1 {
+    font-size: 20px;
+    font-family: "BrunoAce";
+    text-align: center;
+}
+
+#P2 {
+    font-size: 20px;
+    font-family: "BrunoAce";
+    position: relative;
+    bottom: 17px;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                0px 8px 13px rgba(0,0,0,0.1),
+                0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.PeopleInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.PeopleInfo p {
+    font-family: "brunoAce";
+}
+
+.Person1 {
+    width: 250px;
+    border: 5px dotted var(--DarkBlue);
+    border-radius: 20px;
+    padding: 20px;
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+}
+
+.Person2 {
+    width: 250px;
+    border: 5px dotted var(--DarkBlue);
+    border-radius: 20px;
+    padding: 20px;
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+    position: relative;
+    top: 50px;
+    height: 750px;
+}
+
+.Person3 {
+    width: 250px;
+    border: 5px dotted var(--DarkBlue);
+    border-radius: 20px;
+    padding: 20px;
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+    height: 800px;
+}
+
+.Person4 {
+    width: 250px;
+    border: 5px dotted var(--DarkBlue);
+    border-radius: 20px;
+    padding: 20px;
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+    position: relative;
+    top: 50px;
+    height: 750px;
+}
+
+#ImageOfPerson1 {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    -webkit-transition-duration: 2s;
+         -o-transition-duration: 2s;
+            transition-duration: 2s;
+    position: relative;
+    left: 24px;
+    top: 20px;
+}
+
+#ImageOfPerson2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    -webkit-transition-duration: 2s;
+         -o-transition-duration: 2s;
+            transition-duration: 2s;
+    position: relative;
+    left: 24px;
+    top: 20px;
+}
+
+#ImageOfPerson3 {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    -webkit-transition-duration: 2s;
+         -o-transition-duration: 2s;
+            transition-duration: 2s;
+    position: relative;
+    left: 24px;
+    top: 20px;
+}
+
+#ImageOfPerson4 {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    -webkit-transition-duration: 2s;
+         -o-transition-duration: 2s;
+            transition-duration: 2s;
+    position: relative;
+    left: 24px;
+    top: 20px;
+}
+
+.PersonInfo1 p {
+    position: relative;
+    top: 40px;
+}
+
+.PersonInfo3 p {
+    position: relative;
+    top: 40px;
+}
+
+#ImageOfPerson1:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+#ImageOfPerson2:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+#ImageOfPerson3:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+#ImageOfPerson4:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.Person1:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    cursor: pointer;
+}
+
+.Person2:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    cursor: pointer;
+}
+
+.Person3:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    cursor: pointer;
+}
+
+.Person4:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* extra? */
+
+#P3 {
+    font-family: "brunoAce";
+    font-size: 20px;
+    background-color: var(--DarkBlue);
+    color: var(--silver);
+    padding: 30px;
+}
+
+#P4 {
+    font-family: "brunoAce";
+    font-size: 20px;
+    background-color: var(--DarkBlue);
+    color: var(--silver);
+    padding: 30px;
+}
+
+.Line {
+    height: 2px;
+}
+
+.FinalThoughs h1 {
+    text-align: center;
+    font-family: "brunoAce";
+    padding: 0px 40px;
+}
+
+#ButtonLast {
+    position: relative;
+    padding: auto;
+    width: 300px;
+    height: 50px;
+    margin-left: 600px;
+    background: none;
+    border: 5px solid var(--GreenGray);
+    color: var(--GreenGray);
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+#ButtonLast:hover {
+    background-color: #ccc;
+}
+
+#ButtonLast:active {
+    color: black;
+    border: 7px solid black;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 840px;
+    background-color: var(--DarkBlue);
+}
+
+#P6 {
+    width: 100%;
+    height: 200px;
+    background-color: var(--silver);
+    color: var(--silver);
+}
+
+.BottomPart {
+    background-color: var(--DarkBlue);
+    height: 500px;
+}
+
+.Icons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: inline-block;
+    position: relative;
+    margin-left: 34%;
+    margin-right: 34%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    top: 50px;
+}
+
+.Icons i {
+    font-size: 70px;
+    padding: 0px 20px;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    color: var(--silver);
+}
+
+.Icons i:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+.Icons i {
+    font-size: 70px;
+    padding: 0px 20px;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    color: var(--silver);
+}
+
+.Icons i:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+.First {
+    width: 20%;
+}
+
+.First ul li {
+    font-family: "brunoAce";
+    color: #fff;
+    position: relative;
+    top: 180px;
+    left: 100px;
+}
+
+.First ul {
+    list-style: none;
+}
+
+#P7 {
+    color: #fff;
+    z-index: 200;
+} 
+
+.Second {
+    color: #fff;
+    position: relative;
+    top: 33px;
+    left: 600px;
+    width: 30%;
+    font-family: "BrunoAce";
+}
+
+.Second ul {
+    list-style: none;
+}
+
+.Second ul li {
+    cursor: pointer;
+}
+
+.Third {
+    color: #fff;
+    position: relative;
+    left: 1000px;
+    width: 30%;
+    font-family: "BrunoAce";
+    bottom: 200px;
+}
+
+.Third ul {
+    list-style: none;
+}
+
+.Third ul li {
+    cursor: pointer;
+}
+
+.Line {
+    width: 100%;
+    height: 1px;
+    color: #fff;
+    border:none;
+    height: 20px;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #ffffff;
+    box-shadow: 0 20px 20px -20px #ffffff;
+    margin: -50px auto 10px; 
+    position: relative;
+    bottom: 50px;
+}
+
+#P8 {
+    text-align: center;
+    color: #fff;
+    position: relative;
+}

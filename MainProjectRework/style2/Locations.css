@@ -1,0 +1,515 @@
+:root {
+    --brown: rgb(178, 55, 55);
+    --red: rgba(209,65,36,255);
+    --silver: rgb(220,220,220);
+    --GreenGray: rgb(47,79,79);
+    --Blue: rgb(72, 83, 89);
+    --DarkBlue: rgb(39, 49, 53);
+    --lightGreen: rgb(138, 222, 92);
+}
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar */
+
+@font-face {
+    font-family: BrunoAce;
+    src: url(/Fonts2/HindSiliguri-Medium.ttf);
+}
+
+@font-face {
+    font-family: BrunoAceBold;
+    src: url(/Fonts2/HindSiliguri-SemiBold.ttf);
+}
+
+nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.NavigationBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    background-color: white;
+}
+
+.NavigationBar ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+}
+
+.NavigationBar ul li {
+    padding: 10px 30px;
+    position: relative;
+}
+
+.NavigationBar ul li a {
+    color: var(--DarkBlue);
+    font-family: "BrunoAce";
+    text-decoration: none;
+}
+
+.DropDownMenu {
+    display: none;
+}
+
+.NavigationBar ul li:hover .DropDownMenu {
+    display: block;
+    position: absolute;
+    right: 0;
+    list-style: none;
+    top: 100%;
+    background-color: #ffffff;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.DropDownMenu ul {
+    display: block;
+    margin: 10px;
+    position: relative;
+    right: 10px;
+}
+
+.DropDownMenu ul li a {
+    padding: 10px 0px;
+    cursor: pointer;
+}
+
+#Icon {
+    position: relative;
+    right: 20px;
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+    color: var(--DarkBlue);
+    cursor: pointer;
+    display: block;
+}
+
+.Active {
+    background-color: var(--lightGreen);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#AboutUsButton::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 5px;
+    left: 0;
+    background-color: var(--DarkBlue);
+    -webkit-transform-origin: bottom right;
+        -ms-transform-origin: bottom right;
+            transform-origin: bottom right;
+    -webkit-transition: -webkit-transform 0.25s ease-out;
+    transition: -webkit-transform 0.25s ease-out;
+    -o-transition: transform 0.25s ease-out;
+    transition: transform 0.25s ease-out;
+    transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+    -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
+}
+
+#AboutUsButton:hover::after {
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: bottom left;
+        -ms-transform-origin: bottom left;
+            transform-origin: bottom left;
+}
+
+#ExtraButton::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 5px;
+    left: 0;
+    background-color: var(--DarkBlue);
+    -webkit-transform-origin: bottom right;
+        -ms-transform-origin: bottom right;
+            transform-origin: bottom right;
+    -webkit-transition: -webkit-transform 0.25s ease-out;
+    transition: -webkit-transform 0.25s ease-out;
+    -o-transition: transform 0.25s ease-out;
+    transition: transform 0.25s ease-out;
+    transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+    -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
+}
+
+#ExtraButton:hover::after {
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: bottom left;
+        -ms-transform-origin: bottom left;
+            transform-origin: bottom left;
+}
+
+#GalleryButton::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 5px;
+    left: 0;
+    background-color: var(--DarkBlue);
+    -webkit-transform-origin: bottom right;
+        -ms-transform-origin: bottom right;
+            transform-origin: bottom right;
+    -webkit-transition: -webkit-transform 0.25s ease-out;
+    transition: -webkit-transform 0.25s ease-out;
+    -o-transition: transform 0.25s ease-out;
+    transition: transform 0.25s ease-out;
+    transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+    -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
+}
+
+#GalleryButton:hover::after {
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: bottom left;
+        -ms-transform-origin: bottom left;
+            transform-origin: bottom left;
+}
+
+#HomeButton::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 5px;
+    left: 0;
+    background-color: var(--DarkBlue);
+    -webkit-transform-origin: bottom right;
+        -ms-transform-origin: bottom right;
+            transform-origin: bottom right;
+    -webkit-transition: -webkit-transform 0.25s ease-out;
+    transition: -webkit-transform 0.25s ease-out;
+    -o-transition: transform 0.25s ease-out;
+    transition: transform 0.25s ease-out;
+    transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+    -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
+}
+
+#HomeButton:hover::after {
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: bottom left;
+        -ms-transform-origin: bottom left;
+            transform-origin: bottom left;
+}
+
+#Logo {
+    position: relative;
+    left: 20px;
+}
+
+.Container {
+    width: 85vmin;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    border: 10px solid var(--DarkBlue);
+    box-shadow: 10px 25px 30px var(--Blue, 0.2);
+}
+
+/* info */
+
+.StartingPoint p {
+    text-align: center;
+    font-family: "BrunoAce";
+    font-size: 25px;
+    position: relative;
+    bottom: 25px;
+}
+
+.Info {
+    display: block;
+    background-color: var(--DarkBlue);
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 30px;
+    height: 760px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.First2 {
+    display: flex;
+}
+
+.Second2 {
+    display: flex;
+}
+
+.Third2 {
+    display: flex;
+}
+
+.First2 img {
+    border-radius: 20px;
+    position: relative;
+    top: 20px;
+}
+
+.First2 p {
+    position: relative;
+    left: 65px;
+    top: 30px;
+    font-family: "brunoAce";
+    z-index: 3;
+    background-color: var(--silver);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.Second2 img {
+    border-radius: 20px;
+    position: relative;
+    top: 50px;
+    left: 670px;
+}
+
+.Second2 p {
+    position: relative;
+    left: 50px;
+    top: 70px;
+    font-family: "brunoAce";
+    z-index: 3;
+    left: 750px;
+    background-color: var(--silver);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.Third2 img {
+    border-radius: 20px;
+    position: relative;
+    top: 20px;
+    right: 20px;
+}
+
+.Third2 p {
+    position: relative;
+    left: 65px;
+    top: 30px;
+    font-family: "brunoAce";
+    z-index: 3;
+    background-color: var(--silver);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#EndText2 {
+    text-align: center;
+    font-family: "brunoAce";
+}
+
+.Info2 {
+    background-color: var(--Blue);
+    width: 500px;
+    padding: 50px;
+    position: relative;
+    bottom: 150px;
+    left: 900px;
+    border-radius: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.Info2 img {
+    border-radius: 20px;
+    position: relative;
+    bottom: 10px;
+}
+
+.Info2 p {
+    position: relative;
+    top: 40px;
+    left: 20px;
+    font-family: "brunoAce";
+    z-index: 3;
+    background-color: var(--silver);
+    padding: 5px;
+    border-radius: 10px;
+    width: 80px;
+    
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 840px;
+    background-color: var(--DarkBlue);
+}
+
+#P6 {
+    width: 100%;
+    height: 200px;
+    background-color: var(--silver);
+    color: var(--silver);
+}
+
+.BottomPart {
+    background-color: var(--DarkBlue);
+    height: 500px;
+}
+
+.Icons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: inline-block;
+    position: relative;
+    margin-left: 34%;
+    margin-right: 34%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    top: 50px;
+}
+
+.Icons i {
+    font-size: 70px;
+    padding: 0px 20px;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    color: var(--silver);
+}
+
+.Icons i:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+.Icons i {
+    font-size: 70px;
+    padding: 0px 20px;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    color: var(--silver);
+}
+
+.Icons i:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+.First {
+    width: 20%;
+}
+
+.First ul li {
+    font-family: "brunoAce";
+    color: #fff;
+    position: relative;
+    top: 180px;
+    left: 100px;
+}
+
+.First ul {
+    list-style: none;
+}
+
+#P7 {
+    color: #fff;
+    z-index: 200;
+} 
+
+.Second {
+    color: #fff;
+    position: relative;
+    top: 33px;
+    left: 600px;
+    width: 30%;
+    font-family: "BrunoAce";
+}
+
+.Second ul {
+    list-style: none;
+}
+
+.Second ul li {
+    cursor: pointer;
+}
+
+.Third {
+    color: #fff;
+    position: relative;
+    left: 1000px;
+    width: 30%;
+    font-family: "BrunoAce";
+    bottom: 200px;
+}
+
+.Third ul {
+    list-style: none;
+}
+
+.Third ul li {
+    cursor: pointer;
+}
+
+.Line {
+    width: 100%;
+    height: 1px;
+    color: #fff;
+    border:none;
+    height: 20px;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #ffffff;
+    box-shadow: 0 20px 20px -20px #ffffff;
+    margin: -50px auto 10px; 
+    position: relative;
+    bottom: 50px;
+}
+
+#P8 {
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
