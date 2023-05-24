@@ -515,9 +515,11 @@ nav {
 
 /* Footer */
 
+/* Footer */
+
 footer {
     width: 100%;
-    height: 840px;
+    height: 700px;
     background-color: var(--DarkBlue);
 }
 
@@ -593,6 +595,8 @@ footer {
 
 .First ul {
     list-style: none;
+    position: relative;
+    bottom: 100px;
 }
 
 #P7 {
@@ -611,6 +615,8 @@ footer {
 
 .Second ul {
     list-style: none;
+    position: relative;
+    bottom: 62px;
 }
 
 .Second ul li {
@@ -643,8 +649,7 @@ footer {
     height: 50px;
     margin-top: 0;
     border-bottom: 1px solid #ffffff;
-    -webkit-box-shadow: 0 20px 20px -20px #ffffff;
-            box-shadow: 0 20px 20px -20px #ffffff;
+    box-shadow: 0 20px 20px -20px #ffffff;
     margin: -50px auto 10px; 
     position: relative;
     bottom: 50px;
