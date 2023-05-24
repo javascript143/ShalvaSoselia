@@ -475,6 +475,8 @@ footer {
 
 .Second ul {
     list-style: none;
+    position: relative;
+    bottom: 60px;
 }
 
 .Second ul li {
