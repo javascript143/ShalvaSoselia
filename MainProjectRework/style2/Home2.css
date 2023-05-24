@@ -499,9 +499,9 @@ nav {
     font-size: 20px;
     font-family: "BrunoAce";
     background-color: var(--darkBlue);
-    color: var(--silver);
+    color: var(--darkBlue);
     border-radius: 10px;
-    border: 1px solid var(--silver);
+    border: 1px solid var(--darkBlue);
 }
 
 #SubmissionButton:hover {
