@@ -361,32 +361,42 @@ footer {
 }
 
 .Icons {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     display: inline-block;
     position: relative;
-    /* margin-left: 34%;
-    margin-right: 34%; */
-    justify-content: space-between;
+    margin-left: 34%;
+    margin-right: 34%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 500px;
-    top: 20%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
 }
 
 .Icons i {
-    align-items: center;
-    margin: auto;
     font-size: 70px;
     padding: 0px 20px;
     -webkit-transition: 1s;
     -o-transition: 1s;
     transition: 1s;
     color: var(--silver);
-    margin: 0 auto;
+}
+
+.Icons i:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+.Icons i {
+    font-size: 70px;
+    padding: 0px 20px;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    color: var(--silver);
 }
 
 .Icons i:hover {
@@ -429,7 +439,7 @@ footer {
 .Second ul {
     list-style: none;
     position: relative;
-    left: 30px;
+    left: 40px;
 }
 
 .Second ul li {
