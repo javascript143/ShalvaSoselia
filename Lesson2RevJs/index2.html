@@ -1,0 +1,29 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script type="text/javascript">
+            let Person = {
+                Eye: 'To See',
+                Mouth: ['To Eat', 'To Speak'],
+                Nose: 'To Breathe',
+            } // define object
+
+            Person.hand = 'To Touch'; // add new key,value pair
+
+            // alert(Person.Eye) // access value of key
+            // alert(Person['Eye']) // acess value of key
+
+            // alert(Person.Mouth[0])
+
+            delete Person.Nose; // delete key, value pair
+
+            alert(Person.Nose)
+
+            Person.Eye = 'To See Clearly'; // changed value of the key (aka. update)
+
+            alert(Person.Eye)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,165 @@
+body {
+    background-image: url(https://javascript143.github.io/ShalvaSoselia/LogoPics/345006057_1298462144079221_8963575972998839668_n.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-size: 100% 100%; */
+    background-color: rgb(207, 207, 207);
+    background-blend-mode: multiply;
+}
+
+/* Log In page */
+
+@font-face {
+    font-family: BrunoAce;
+    src: url(/Fonts2/HindSiliguri-Medium.ttf);
+}
+
+@font-face {
+    font-family: BrunoAceBold;
+    src: url(/Fonts2/HindSiliguri-SemiBold.ttf);
+}
+
+.LogInForm {
+    background: rgba(255,255,255, 0.5);
+    border: 3px solid white;
+    height: 300px;
+    width: 500px;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    box-shadow: rgba(3, 3, 45, 0.362) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+label {
+    position: relative;
+    bottom: 10px;
+    font-family: "BrunoAce";
+}
+
+#EmailLabel {
+    position: relative;
+}
+
+#EmailInput {
+    position: relative;
+    background-color: #FFFFFF;
+    bottom: 12px;
+}
+
+#PasswordInput {
+    position: relative;
+    bottom: 18px;
+}
+
+#PasswordLabel {
+    position: relative;
+    bottom: 15px;
+}
+
+.InsideContent {
+    position: relative;
+    top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.LogInSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+#ForgotPassword {
+    position: relative;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 5px;
+    color: black;
+    cursor: pointer;
+    font-family: "brunoAceBold";
+    font-size: 14px;
+    bottom: 20px;
+}
+
+#ForgotPassword:hover {
+    -webkit-text-decoration: underline white;
+            text-decoration: underline white;
+}
+
+.LogInSection {
+    z-index: 30;
+}
+
+.LogInSection button {
+    position: relative;
+    margin-right: 10px;
+    border: none;
+    background: none;
+    font-size: 16px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    bottom: 23px;
+    font-family: "brunoAce";
+}
+
+.LogInSection button:hover {
+    cursor: pointer;
+    border-radius: 20px;
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+.Line {
+    width: 80%;
+    height: 1px;
+    position: relative;
+    bottom: 25px;
+}
+
+input {
+    border-radius: 12px;
+    height: 30px;
+    padding: 20px;
+    position: relative;
+    bottom: 10px;
+    border: none;
+}
+
+#NotAMember {
+    position: relative;
+    font-family: "brunoAce";
+    bottom: 40px;
+}
+
+.ForgotPassNNotReg p {
+    position: relative;
+    bottom: 9px;
+    font-family: "BrunoAce";
+}
+
+.ForgotPassNNotReg button {
+    position: relative;
+    bottom: 60px;
+    color: white;
+    background-color: rgb(72, 83, 89);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.ForgotPassNNotReg button:hover {
+    background-color: rgb(39, 49, 53);
+}
