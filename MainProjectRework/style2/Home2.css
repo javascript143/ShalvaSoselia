@@ -501,7 +501,7 @@ nav {
     background-color: var(--darkBlue);
     color: var(--darkBlue);
     border-radius: 10px;
-    border: 1px solid var(--darkBlue);
+    border: 1px solid var(--DarkBlue);
 }
 
 #SubmissionButton:hover {
@@ -515,11 +515,9 @@ nav {
 
 /* Footer */
 
-/* Footer */
-
 footer {
     width: 100%;
-    height: 700px;
+    height: 840px;
     background-color: var(--DarkBlue);
 }
 
@@ -595,8 +593,6 @@ footer {
 
 .First ul {
     list-style: none;
-    position: relative;
-    bottom: 100px;
 }
 
 #P7 {
@@ -616,7 +612,7 @@ footer {
 .Second ul {
     list-style: none;
     position: relative;
-    bottom: 68px;
+    left: 40px;
 }
 
 .Second ul li {
