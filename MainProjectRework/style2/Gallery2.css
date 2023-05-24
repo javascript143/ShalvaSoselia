@@ -338,7 +338,7 @@ nav {
 
 footer {
     width: 100%;
-    height: 840px;
+    height: 700px;
     background-color: var(--DarkBlue);
 }
 
@@ -414,6 +414,8 @@ footer {
 
 .First ul {
     list-style: none;
+    position: relative;
+    bottom: 100px;
 }
 
 #P7 {
@@ -432,6 +434,8 @@ footer {
 
 .Second ul {
     list-style: none;
+    position: relative;
+    bottom: 68px;
 }
 
 .Second ul li {
