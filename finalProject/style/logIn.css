@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: rgba(21,83,239,255);
+    --cyan: rgba(118,155,246,255);
+    --darkRed: #220a0a;
+}
+
+body {
+    background-image: url(/finalProject/pictures/gymPhoto4.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: grey;
+    background-blend-mode: multiply;
+}
+
+section {
+    position: absolute;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    height: 370px;
+}
+
+#signIntext {
+    padding: 10px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#stayUpdatedText {
+    padding-left: 10px;
+    font-size: 17px;
+}
+
+#emailInput {
+    margin-left: 5%;
+    padding: 10px;
+    margin-top: 30px;
+    width: 90%;
+    border: 2px solid var(--blue);
+    border-radius: 5px;
+}
+
+#passwordInput {
+    margin-left: 5%;
+    padding: 10px;
+    margin-top: 30px;
+    width: 90%;
+    border: 2px solid var(--blue);
+    border-radius: 5px;
+}
+
+#logInButton {
+    border: none;
+    transition: 1s;
+    background-color: var(--blue);
+    padding: 15px;
+    width: 90%;
+    margin: 10px;
+    color: aliceblue;
+    font-size: 15px;
+    border-radius: 20px;
+    position: relative;
+    top: 40px;
+}
+
+#logInButton:hover {
+    cursor: pointer;
+    background-color: rgb(28, 28, 162);
+}
+
+.buttonOne {
+    text-align: center;
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.newToWebsite {
+    display: flex;
+    position: relative;
+    top: 22%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 129px;
+    gap: 5px;
+}
+
+#newText {
+    color: white;
+}
+
+.linkToSignUp a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+@media(max-width: 950px) {
+    #logInButton {
+        position: relative;
+        top: 30px;
+    }
+
+    section {
+        width: 40%;
+    }
+}
+
+@media(max-width: 650px) {
+    section {
+        width: 50%;
+    }
+}
+
+@media(max-width: 492px) {
+    #logInButton {
+        position: relative;
+        bottom: 20%;
+    }
+
+    section {
+        width: 60%;
+    }
+}
+
+/* validator */
+
+#emailValidationText {
+    position: relative;
+    left: 20px;
+}
+
+#passwordValidatonText {
+    position: relative;
+    left: 20px;
+}

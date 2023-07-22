@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/finalProject/style/contactUs.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>PowerPeak</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img src="/finalProject/pictures/logo.png" width="300px" id="logoImage">
+                <div class="openMenu"><i class="fa fa-bars"></i></div>
+                <ul class="mainMenu">
+                    <li><a href="/finalProject/html/home.html">Home</a></li>
+                    <li><a href="/finalProject/html/contactUs.html">Contact Us</a></li>
+                    <li><a href="/finalProject/html/aboutUs.html">About Us</a></li>
+                    <div class="closeMenu"><i class="fa fa-times" id="burgerIcon"></i></div>
+                </ul>
+            </nav>
+        </header>
+        <section class="upperSection">
+            <div>
+                <div>
+                    <div class="contactUsText">
+                        <p>Contact Us</p>
+                    </div>
+                    <div class="contactUsTextTwo">
+                        <p>Have any questions? Feel free to contact us!</p>
+                    </div>
+                </div>
+                <div class="contactContainers">
+                    <div class="left">
+                        <p id="pressText">Press</p>
+                        <p id="interestedText">Are you interested in our latest news or need to get in touch?</p>
+                        <p id="socialsText">check our socials!</p>
+                    </div>
+                    <div class="middle">
+                        <p id="pressText">Help and Support</p>
+                        <p id="interestedText">Our support team is all across the globe to give you answers fast</p>
+                        <button id="visitSupportPage" onclick="changeScreenToSupport()">Visit Support Page</button>
+                    </div>
+                    <div class="right">
+                        <p id="pressText">sales</p>
+                        <p id="interestedText">Get in touch with our sales team to see how can we work together</p>
+                        <button id="contactsSaleButton">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="trainerBooking">
+            <div class="bookingTexts">
+                <p>Already decided to start working out but have trouble with working out or need someone to monitor your diet? Fear not! here is a list of our prosessional trainers which can help you with your goal!</p>
+                <br>
+                <p>Click on the picture of the the desired coach and we will change your screen to their socials!</p>
+            </div>
+            <div class="coachSearcherContainer">
+                <div>
+                    <input type="text" id="coachSearcher" placeholder="Search coach" title="Search by name" onkeyup="filter()">
+                </div>
+                <div class="coachList">
+                    <ul id="contacts">
+                        <li>
+                            <img src="/finalProject/pictures/coach1.jpg" width="100px" height="100px">
+                            <a href="#">Jacob</a>
+                            <p>40$/hour</p>
+                        </li>
+                        <li>
+                            <img src="/finalProject/pictures/coach2.jpg" width="100px" height="100px">
+                            <a href="#">Eliza</a>
+                            <p>55$/hour</p>
+                        </li>
+                        <li>
+                            <img src="/finalProject/pictures/coach3.jpg" width="100px" height="100px">
+                            <a href="#">Nate</a>
+                            <p>35$/hour</p>
+                        </li>
+                        <li>
+                            <img src="/finalProject/pictures/coach4.jpg" width="100px" height="100px">
+                            <a href="#">Hank</a>
+                            <p>50$/hour</p>
+                        </li>
+                        <li>
+                            <img src="/finalProject/pictures/coach5.jpg" width="100px" height="100px">
+                            <a href="#">Ava</a>
+                            <p>60$/hour</p>
+                        </li>
+                        <li>
+                            <img src="/finalProject/pictures/coach6.jpg" width="100px" height="100px">
+                            <a href="#">Mia</a>
+                            <p>30$/hour</p>
+                        </li>
+                        <li>
+                            <img src="/finalProject/pictures/coach7.jpg" width="100px" height="100px">
+                            <a href="#">Jack</a>
+                            <p>80$/hour</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div>
+                <div class="logoText">
+                    <p>Powerpeak</p>
+                </div>
+                <div class="motivatingText">
+                    <p>Powerpeak: a company that will help you get your life together. We are looking forward to help you develop yourself and your body</p>
+                </div>
+                <div class="responsiveFooter">
+                    <div class="iconsFooter">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <div class="footerNav">
+                        <ul>
+                            <li><a href="/finalProject/html/home.html">Home</a></li>
+                            <li><a href="/finalProject/html/contactUs.html">Contact Us</a></li>
+                            <li><a href="/finalProject/html/aboutUs.html">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyrightText">
+                    <p><i class="fa-regular fa-copyright"></i> 2023 PowerPeak Georgia, inc. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript" src="/finalProject/script/contactUs.js"></script>
+    </body>
+</html>
