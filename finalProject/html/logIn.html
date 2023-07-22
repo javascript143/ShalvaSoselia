@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://javascript143.github.io/ShalvaSoselia/finalProject/style/logIn.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section>
+            <form class="form" name="loginForm" onsubmit="returnvalidateLoginForm()" method="POST" id="form">
+                <div class="upperTexts">
+                    <div class="texts">
+                        <p id="signIntext">Sign In</p>
+                        <p id="stayUpdatedText">Stay updated on your world</p>
+                    </div>
+                </div>
+                <div class="emailsAndPassInput">
+                    <input id="emailInput" placeholder="Enter email" required onchange="emailValidator()">
+                    <span id="emailValidationText"></span>
+                    <br>
+                    <input id="passwordInput" placeholder="Enter password" type="password" required onchange="passwordChecker()">
+                    <span id="passwordValidatonText"></span>
+                </div>
+                <div class="buttonOne">
+                    <button id="logInButton" type="submit" onclick="logIn()">Log in</button>
+                </div>
+            </form>
+            <div class="newToWebsite">
+                <div>
+                    <p id="newText">new here?</p>
+                </div>
+                <div class="linkToSignUp">
+                    <a id="signUpText" href="https://javascript143.github.io/ShalvaSoselia/finalProject/html/signUp.html">Sign Up!</a>
+                </div>
+            </div>
+        </section>
+        <script src="https://javascript143.github.io/ShalvaSoselia/finalProject/script/logIn.js" type="text/javascript"></script>
+    </body>
+</html>
